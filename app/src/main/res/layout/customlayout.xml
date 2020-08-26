@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="80dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="263dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/coverart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="17dp"
+        android:layout_toEndOf="@+id/coverart"
+        android:fontFamily="@font/poppins"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/coverart"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        app:srcCompat="@drawable/lost_stars" />
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="229dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/coverart"
+        android:fontFamily="@font/poppins"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="-5dp"
+        android:visibility="invisible"/>
+</RelativeLayout>
